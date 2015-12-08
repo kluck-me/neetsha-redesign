@@ -1,6 +1,9 @@
 {
   "name": "neetsha-redesign",
   "version": "0.0.0",
+  "scripts": {
+    "serve": "rm -rf dist && gulp serve"
+  },
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.0",
