@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title 新都社 | メニュー
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    base(target='main')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css')
+  body
+    .wrapper-menu
+      p.logo
+        a(href='#')
+          img(src='img/logo.png', alt='新都社')
+      form.search(method='GET', action='#', accept-charset='utf-8,us-ascii')
+        p
+          input(type='hidden', name='enc', value='3')
+          input(type='text', name='search', value='', size='24', maxlength='128')
+          button(type='submit') Search
+      dl
+        dt 作品を読む
+        each name, id in { 1: '週刊少年VIP', 2: '週刊ヤングVIP', 3: '月刊コミックニート', 6: '別冊少女きぼん', 8: 'まんがニートぷげら', 4: '文芸新都', 7: 'ニートノベル', 9: 'ベータマガジン' }
+          dd
+            a(class='m#{id}', href='#')= name
+        dt 作品を探す
+        dd
+          a(href='#') ランキング
+        dd
+          a(href='#') 最新コメント
+        dd
+          a(href='#') タグリスト
+        dd
+          a(href='#') 瞬間ランダムVIP
+        dt コミュニティ
+        dd
+          a(href='#') 編集部
+        dd
+          a(href='#') 本スレ
+        dd
+          a(href='#') 読者ページ
+        dd
+          a(href='#') チャットルーム
+        dd
+          a(href='#') ブログ
+        dd
+          a(href='#') うｐろだ
+        dt 作品投稿・編集
+        dd
+          a(href='#') 作品編集
+        dd
+          a(href='#') 新規投稿
+        dt その他機能
+        dd
+          a(href='http://wiki.neetsha.jp/', target='_blank') wiki
+        dd
+          a(href='http://extlib.net/', target='_blank') 超絶書庫
+        dd
+          a(href='http://comment.kudasai.biz/', target='_blank') コメスト
